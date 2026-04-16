@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    
+   
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+/* hero section start  */
+
+#hero-container {
+    background-color: #FEEAE9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#hero-content {
+    padding: 40px;
+}
+
+#hero-content h2 {
+    font-size: 56px;
+    color: #1F1F1F;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#hero-content p {
+    font-size: 18px;
+    color: #4E4E4E;
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+
+#hero-content p:nth-of-type(2) {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FF136F;
+    margin-bottom: 30px;
+}
+
+#hero-content button {
+    padding: 14px 20px;
+    background-color: lightseagreen;
+    gap: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* hero section end  */
+
+/* category section start   */
+
+#category-container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#category-container h2 {
+    margin-bottom: 24px;
+}
+
+#cat-card-box {
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+    margin-bottom: 98px;
+}
+.watch-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF9C35;
+    width: 359px;
+    height: 120px;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.watch-card p {
+    font-size: 36px;
+    color: white;
+}
+.bag-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF136F;
+    width: 359px;
+    height: 120px;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.bag-card p {
+    font-size: 36px;
+    color: white;
+}
+.shoe-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3F07F8;
+    width: 359px;
+    height: 120px;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.shoe-card p {
+    font-size: 36px;
+    color: white;
+}
+
+/* category section end  */
+
