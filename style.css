@@ -20,6 +20,12 @@
 /* hero section start  */
 
 #hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 20px 0;
     background-color: #FEEAE9;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -81,7 +87,7 @@
     justify-content: space-between;
     margin-bottom: 98px;
 }
-.watch-card {
+.card {
     display: flex;
     justify-content: space-between;
     background-color: #FF9C35;
@@ -91,37 +97,18 @@
     padding: 20px 10px;
     border-radius: 10px;
 }
-.watch-card p {
+.card p {
     font-size: 36px;
     color: white;
 }
-.bag-card {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FF136F;
-    width: 359px;
-    height: 120px;
-    align-items: center;
-    padding: 20px 10px;
-    border-radius: 10px;
+.card:nth-child(1) {
+    background-color:#FF9C35 ;
 }
-.bag-card p {
-    font-size: 36px;
-    color: white;
+.card:nth-child(2) {
+    background-color:#FF136F ;
 }
-.shoe-card {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3F07F8;
-    width: 359px;
-    height: 120px;
-    align-items: center;
-    padding: 20px 10px;
-    border-radius: 10px;
-}
-.shoe-card p {
-    font-size: 36px;
-    color: white;
+.card:nth-child(1) {
+    background-color:#3F07F8 ;
 }
 
 /* category section end  */
@@ -157,7 +144,7 @@
     border-radius: 20px;
     text-align: center;
     box-shadow: 0px 6px 20px 1px #92929220;
-    max-width: 360px;
+    /* max-width: 360px; */
 }
     .shoe-cards h4 {
         font-size: 24px;
@@ -244,4 +231,169 @@
     background-color: #333;
 }
 
+.hidden {
+    display: none;
+}
+
 /* newsletter section end  */
+
+
+
+/* Laptop Device (993px - 1200px)  */
+@media screen and (max-width: 1200px) {
+    /* hero section start  */
+   #header-container {
+    max-width: 65%;
+   }
+
+   #hero-container {
+    max-width: 65%;
+    max-height: 400px;
+   }
+
+   #hero-content h2 {
+    font-size: 30px;
+   }
+   #hero-content p {
+    font-size: 13px;
+    line-height: 15px;
+   }
+   /* hero section end  */
+
+   /* category section start  */
+   #category-container {
+    width: 65%;
+   }
+   #cat-card-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+   .card {
+    width: 100%;
+   }
+/* category section end  */
+/* shoe section start  */
+#shoe-container{
+    max-width: 65%;
+}
+#shoe-cardbox {
+    display: flex;
+    flex-direction: column;
+}
+.shoe-cards {
+    width: 100%;
+}
+/* shoe section end  */
+   
+         
+}
+
+/* Tablet Device (641px - 992px)  */
+@media screen and (max-width: 992px) {
+    /* hero section start  */
+   #header-container {
+    max-width: 65%;
+   }
+   #hero-content h2 {
+    font-size: 20px;
+   }
+   #hero-content p {
+    font-size: 10px;
+    line-height: 12px;
+   }
+   #hero-content p:nth-of-type(2) {
+    font-size: 20px;
+   }
+   #hero-content {
+    padding: 20px;
+   }
+   #hero-content button {
+    padding: 10px 15px;
+    gap: 6px;
+    font-size: 13px;
+    border-radius: 8px;
+   }
+   #hero-image img {
+    max-width: 200px;
+   }
+   /* hero section end  */
+
+}
+
+/* Mobile Device (320px - 640px)  */
+@media screen and (max-width: 640px) {
+    /* hero section start  */
+   #header-container {
+    max-width: 50%;
+    align-items: center;
+   }
+   #hero-image img {
+    max-width: 100px;
+   }
+   #hero-content h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+   }
+   #hero-content p {
+    font-size: 9px;
+    line-height: 8px;
+    margin-bottom: 10px;
+   }
+    #hero-content p:nth-of-type(2) {
+    font-size: 15px;
+    margin-bottom: 10px;
+   }
+   #hero-content {
+    padding: 15px;
+   }
+   #hero-content button {
+    padding: 6px 10px;
+    gap: 4px;
+    font-size: 9px;
+    border-radius: 8px;
+   }
+   /* hero section end  */
+   /* category section start  */
+   #category-header {
+    font-size: 25px;
+   }
+   .card img {
+    height: 80px;
+    width: 100px;
+   }
+   .card p{
+    font-size: 25px;
+   }
+   /* category section end  */
+   /* Shoe section start  */
+   .shoe-cards img {
+    width: 150px;
+   }
+   /* shoe section end  */
+   /* Newsletter section start  */
+   #newsletter {
+        padding: 40px 15px; /* Adjust padding for mobile */
+    }
+
+    .newsletter-container {
+        text-align: center; /* Ensures h2 and p stay centered */
+    }
+
+    .newsletter-form {
+        flex-direction: column; /* Stacks the input and button */
+        align-items: center;    /* Centers them horizontally in the column */
+        gap: 15px;              /* Adds vertical space between input and button */
+    }
+
+    .newsletter-form input {
+        width: 100%;       /* Allows input to take full container width */
+        max-width: 300px;  /* Prevents it from getting too wide on larger phones */
+    }
+
+    .newsletter-form button {
+        width: 100%;       /* Button matches input width */
+        max-width: 300px;
+    }
+   /* Newsletter section end */
+}
